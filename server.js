@@ -21,12 +21,12 @@ const studentName = process.env.STUDENT_NAME || "Add your student name";
 const studentNumber = process.env.STUDENT_NUMBER || "Add your student number";
 
 app.get("/", (req, res) => {
-  const baseUrl = `${req.protocol}://${req.get("host")}`;
+const baseUrl = `https://${req.get("host")}`;
   res.type("html").send(`<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=sdevice-width,initial-scale=1">
 <title>CampusFix API Guide</title>
 <style>
 body{font:16px/1.6 Arial,sans-serif;max-width:980px;margin:40px auto;padding:0 20px;color:#1d2939}
